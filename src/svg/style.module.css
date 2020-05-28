@@ -1,0 +1,17 @@
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.sidebar {
+  margin: 2px 4px;
+  padding: 2px 4px;
+  overflow-wrap: anywhere;
+  border: 1px solid slategray;
+  border-radius: 2px;
+  position: fixed;
+  font-size: 10px;
+  line-height: 12px;
+  box-sizing: border-box;
+}
