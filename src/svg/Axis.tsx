@@ -6,7 +6,7 @@ import { extent } from "d3-array";
 import { ScaleLinear, ScaleTime } from "d3-scale";
 import { Size } from "../util";
 
-export const LeftAxis: React.FunctionComponent<{
+export const LeftAxis: React.FC<{
   scale: ScaleLinear<number, number>;
 } & Size> = ({
   scale,
@@ -35,7 +35,7 @@ export const LeftAxis: React.FunctionComponent<{
   return <g ref={ref} />;
 };
 
-export const BottomAxis: React.FunctionComponent<{
+export const BottomAxis: React.FC<{
   scale: ScaleTime<number, number>;
 } & Size> = ({
   scale,
