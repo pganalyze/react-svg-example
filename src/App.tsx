@@ -1,8 +1,14 @@
 import React from 'react';
-import { Example } from './svg/Example';
+
+import { generateData } from './util';
+import { Chart } from './svg/Chart';
 
 export const App: React.FC = () => {
-  return <Example />;
+  const data = generateData(20);
+
+  return (
+    <Chart data={data} />
+  )
 }
 
 export default App;
