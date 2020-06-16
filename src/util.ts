@@ -19,9 +19,10 @@ export type Layout = {
 };
 
 export const generateData = (numPoints: number): Datum[] => {
+  const now = Date.now();
   return Array(numPoints).fill(undefined).map((_,i) => {
     return {
-      x: i,
+      x: now - ((numPoints - i) * 1000 * 60 * 60),
       y: Math.sin(i / (numPoints - 1) * 2 * Math.PI)
     }
   });

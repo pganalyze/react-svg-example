@@ -4,14 +4,35 @@
   stroke-width: 2px;
 }
 
-.sidebar {
-  margin: 2px 4px;
-  padding: 2px 4px;
-  overflow-wrap: anywhere;
-  border: 1px solid slategray;
-  border-radius: 2px;
+.tooltipOverlay {
+  height: 100%;
+  width: 100%;
   position: fixed;
-  font-size: 10px;
-  line-height: 12px;
-  box-sizing: border-box;
+}
+
+.tooltip {
+  background-color: rgba(250, 250, 250, 0.9);
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
+  padding: 4px 8px 3px;
+  width: fit-content;
+  position: absolute;
+}
+
+.tooltipLeft {
+  border-radius: 4px 0px 0px 4px;
+  border-width: 1px 0px 1px 1px;
+
+  right: 0px;
+}
+
+.tooltipRight {
+  border-width: 1px 1px 1px 0px;
+  border-radius: 0px 4px 4px 0px;
+
+  left: 0px;
+}
+
+.tooltipLabel {
+  font-weight: bold;
 }
