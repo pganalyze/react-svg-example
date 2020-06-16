@@ -6,12 +6,11 @@ import { extent } from "d3-array";
 import { ScaleLinear, ScaleTime } from "d3-scale";
 import { Size } from "../util";
 
-export const LeftAxis: React.FC<{
-  scale: ScaleLinear<number, number>;
-} & Size> = ({
-  scale,
-  width
-}) => {
+export const LeftAxis: React.FC<
+  {
+    scale: ScaleLinear<number, number>;
+  } & Size
+> = ({ scale, width }) => {
   const ref = useRef<SVGSVGElement>(null);
   useLayoutEffect(() => {
     const [start, end] = extent(scale.range());
@@ -35,12 +34,11 @@ export const LeftAxis: React.FC<{
   return <g ref={ref} />;
 };
 
-export const BottomAxis: React.FC<{
-  scale: ScaleTime<number, number>;
-} & Size> = ({
-  scale,
-  width
-}) => {
+export const BottomAxis: React.FC<
+  {
+    scale: ScaleTime<number, number>;
+  } & Size
+> = ({ scale, width }) => {
   const ref = useRef<SVGSVGElement>(null);
   useLayoutEffect(() => {
     const axisGenerator = axisBottom(scale);
