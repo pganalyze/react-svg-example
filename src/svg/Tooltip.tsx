@@ -45,7 +45,9 @@ const Tooltip: React.FC<
   };
   return (
     <g pointerEvents="none">
-      <circle cx={screenX} cy={screenY} r={3} fill="none" stroke="blue" strokeWidth={3} />
+      {/* circle highlighting the data point being hovered over */}
+      <circle cx={screenX} cy={screenY} r={3} fill="none" stroke="#11a1c4" strokeWidth={3} />
+      {/* the tooltip itself */}
       <Translate {...tipOverlay.pos}>
         <foreignObject {...tipOverlay.size}>
           <div className={styles.tooltipContainer}>
