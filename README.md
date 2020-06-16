@@ -1,3 +1,11 @@
+### react-svg-example
+
+This is a demo of how to use SVG to build interactive components in React. It implements a stripped-down
+but functional chart using d3 and React. You can start with App.tsx and walk through the different
+components to get a sense of how they fit together.
+
+To learn more, check out [our blog post](https://pganalyze.com/blog/working-with-svg-in-react).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
