@@ -6,6 +6,8 @@ components to get a sense of how they fit together.
 
 To learn more, check out [our blog post](https://pganalyze.com/blog/working-with-svg-in-react).
 
+<img src="./screenshot.png">
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
